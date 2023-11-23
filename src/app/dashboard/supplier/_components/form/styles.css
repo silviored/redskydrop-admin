@@ -1,0 +1,14 @@
+.supplier-grid-first-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  @media (min-width: 1024px) {
+    grid-template-columns: 70% 1fr 1fr;
+  }
+}
+
+.supplier-container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}

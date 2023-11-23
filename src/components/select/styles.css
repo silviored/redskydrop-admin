@@ -1,0 +1,27 @@
+.container-select {
+  position: relative;
+}
+.container-error {
+  position: absolute;
+}
+.custom-select {
+  position: relative;
+  padding: 2px 0;
+}
+
+.custom-select select {
+  padding-right: 30px; /* Espaço para a seta */
+}
+
+.custom-select::after {
+  content: "\u25BC"; /* Código Unicode para uma seta para baixo */
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  pointer-events: none; /* Isso permite que o clique passe pela seta para o elemento select */
+}
+
+.has-erro {
+  border: 2px solid red;
+}

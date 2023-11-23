@@ -1,0 +1,29 @@
+.category-container-sub-category {
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+}
+
+.btn-remove {
+  height: 48px;
+}
+
+.btn-remove:disabled {
+  background-color: var(--bg-red-600) !important;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: end;
+}
+
+.category-container-header-sub-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-container-removed {
+  /* margin: auto 0; */
+  max-height: 48px;
+}

@@ -1,0 +1,12 @@
+.bg-gradient {
+  @media (min-width: 1024px) {
+    height: 100vh;
+  }
+  background: linear-gradient(
+    to bottom,
+    rgb(247, 85, 53) 0%,
+    rgb(250, 41, 42) 30%,
+    white 30%,
+    white 100%
+  );
+}

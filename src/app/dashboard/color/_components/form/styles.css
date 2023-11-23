@@ -1,0 +1,10 @@
+.color-container-grid-row-first {
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  gap: 1rem;
+}
+
+.color-container-footer {
+  display: flex;
+  justify-content: end;
+}

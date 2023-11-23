@@ -1,0 +1,9 @@
+.container-input {
+  position: relative;
+}
+.container-error {
+  position: absolute;
+}
+.has-erro {
+  border: 2px solid red;
+}

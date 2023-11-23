@@ -1,0 +1,14 @@
+.container-footer {
+  display: flex;
+  justify-content: end;
+}
+
+.status-container-input {
+  max-width: 100%
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}

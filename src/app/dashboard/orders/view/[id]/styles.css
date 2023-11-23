@@ -1,0 +1,142 @@
+.container-details-order {
+  padding: 1rem;
+}
+.order-container-grid {
+  @media (max-width: 40em) {
+    .responsiveTable tbody tr {
+      border: none;
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+      padding-left: 0rem;
+    }
+    .responsiveTable tbody td {
+      padding-bottom: 0.8rem;
+    }
+    .responsiveTable td .tdBefore {
+      left: 0.75rem !important;
+    }
+  }
+  [data-testid="table"] {
+    border-collapse: collapse;
+  }
+  [data-testid="th"] {
+    text-align: left !important;
+    padding: 1rem;
+  }
+  [data-testid="td"] {
+    border-top: 1px solid rgba(0,0,0,0.2) !important;
+    padding: 1rem;
+  }
+  [data-paid=true] {
+    color: rgb(45 206 137);
+    .tdBefore {
+      color: initial;
+    }
+    font-weight: bold;
+  }
+  [data-paid=false] {
+    color: var(--bg-red-400);
+    .tdBefore {
+      color: initial;
+    }
+    font-weight: bold;
+  }
+  [data-last-item="true"] {
+    width: 100px !important;
+  }
+}
+.container-details-order .title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.container-price h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.container-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  @media (min-width: 1024px) {
+    width: 400px;  
+    margin: 0 auto;
+  }
+}
+.container-description {
+  white-space: pre-wrap;
+  margin-top: 1rem;
+  @media (min-width: 1024px) {
+    font-size: 1.3rem;
+  }
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.container-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-images {
+  @media (min-width: 1024px) {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.container-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.container-button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.btn-container {
+  margin-right: 0px !important;
+  width: auto;
+  padding: 1rem;
+  min-width: 100px
+}
+.btn-container:disabled {
+  background-color: var(--bg-red-600) !important;
+  cursor: default;
+  pointer-events: none;
+}
+
+.row {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 200px auto 300px;
+}
+
+.row:nth-child(2) {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(6, 200px);
+}
+
+.order-container-table-products {
+  margin-top: 1rem;
+  
+}

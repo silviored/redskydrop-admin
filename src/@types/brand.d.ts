@@ -1,0 +1,34 @@
+type BrandResponseApi = {
+  id: number;
+  nome: string;
+  descricao: string;
+  ativo: boolean;
+  periodo: number;
+  estoque: number;
+  fotos: string[];
+  preco: number;
+  quantidade?: number;
+};
+type BrandRequestApi = {
+  id: number;
+  nome: string;
+  descricao: string;
+  preco: number;
+  fotos: any;
+  ativado: boolean;
+  video: string;
+  categoriaid: number;
+  marcaid: number;
+  corid: number;
+  estado: string;
+  estoque: number;
+  estoquemin: number;
+  sku: string;
+  best_sale: boolean;
+  largura: number;
+  altura: number;
+  comprimento: number;
+  peso: number;
+  tempogarantia: number;
+  fornecedorid: number;
+};

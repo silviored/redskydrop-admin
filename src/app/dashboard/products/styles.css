@@ -1,0 +1,118 @@
+@import url('react-super-responsive-table/dist/SuperResponsiveTableStyle.css');
+.products-container {
+
+  @media (max-width: 40em) {
+    .responsiveTable tbody tr {
+      border: none;
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+      padding-left: 0rem;
+    }
+    .responsiveTable tbody td {
+      padding-bottom: 0.8rem;
+    }
+    .responsiveTable td .tdBefore {
+      left: 0.75rem !important;
+    }
+  }
+  [data-testid="table"] {
+    border-collapse: collapse;
+  }
+  [data-testid="th"] {
+    text-align: left !important;
+    padding: 1rem;
+  }
+  [data-testid="td"] {
+    border-top: 1px solid rgba(0,0,0,0.2) !important;
+    padding: 1rem;
+  }
+  [data-paid=true] {
+    color: rgb(45 206 137);
+    .tdBefore {
+      color: initial;
+    }
+    font-weight: bold;
+  }
+  [data-paid=false] {
+    color: var(--bg-red-400);
+    .tdBefore {
+      color: initial;
+    }
+    font-weight: bold;
+  }
+  [data-last-item="true"] {
+    width: 270px !important;
+  }
+}
+.products-container-list {
+  gap: 10px;
+  /* padding-bottom: 5rem; */
+  @media (min-width: 1024px) {
+    padding: 0 1rem;
+  }
+}
+
+.page-title {
+  font-size: 22px;
+}
+
+.btn-payment:disabled {
+  background-color: var(--bg-red-600) !important;
+  cursor: default;
+  pointer-events: none;
+}
+
+.btn-payment{
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  @media (min-width: 1024px) {
+    max-width: 100px;
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+  }
+}
+
+.btn-re-product {
+  margin-bottom: 1rem;
+  @media (min-width: 1024px) {
+    max-width: 100px;
+    margin-bottom: 0rem;
+  }
+}
+
+.btn-clean-filter {
+  padding: 1rem;
+
+}
+
+.products-wrapper-filter {
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.products-container-button-tools {
+  padding: 1rem;
+}
+
+
+.product-container-filter-container {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.product-filter-form-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 1rem;
+  width: 100%;
+}
+
+.product-container-button-filter {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  width: 100%;
+}
