@@ -48,7 +48,8 @@ type ProductResponseApi = {
   tempogarantia: string;
   fornecedorid: string;
   mais_vendido?: string;
-  descricao_curta?: string;
+  destaque?: number;
+  tipo_venda?: number;
 };
 type ProductRequestApi = {
   id: number;
@@ -96,4 +97,6 @@ type ProductRequestApi = {
   peso: string;
   tempogarantia: string;
   fornecedorid: string;
+  destaque?: number;
+  tipo_venda?: number;
 };

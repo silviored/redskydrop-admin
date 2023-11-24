@@ -26,16 +26,34 @@ export const SITUATIONS_USER = {
 };
 
 export const DEFAULT_YES_NOT_OPTIONS: { label: string; value: number }[] =
- [
-  {
-    label: 'Sim',
-    value: 1
-  },
-  {
-    label: 'Não',
-    value: 0
-  },
- ]
+  [
+    {
+      label: 'Sim',
+      value: 1
+    },
+    {
+      label: 'Não',
+      value: 0
+    },
+  ];
+
+export const TIPO_VENDA_OPTIONS: { label: string; value: number }[] =
+  [
+    {
+      label: 'Todos',
+      value: 0
+    },
+    {
+      label: 'Dropshipping',
+      value: 1
+    },
+    {
+      label: 'Atacado',
+      value: 2
+    },
+  ]
+
+
 console.log(Object.entries(SITUATIONS_USER))
 export const SITUATIONS_USER_OPTIONS: { label: string; value: string }[] =
   Object.entries(SITUATIONS_USER).map(([key, value]) => ({

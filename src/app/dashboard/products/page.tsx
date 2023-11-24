@@ -13,7 +13,6 @@ import { useForm } from 'react-hook-form'
 import { Input } from '@/components/input'
 import { stringToBase64 } from '@/utils/base64'
 
-
 const TAKE_PRODUCTS = 20
 
 export default function ProductsList() {

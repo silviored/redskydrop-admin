@@ -41,4 +41,6 @@ export const createSchema = z
     peso: z.string().nonempty(REQUIRED_MESSAGE),
     tempogarantia: z.string().max(2).optional(),
     fornecedorid: z.string().optional(),
+    destaque: z.any().optional(),
+    tipo_venda: z.any().optional(),
   })

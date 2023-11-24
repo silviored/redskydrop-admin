@@ -8,8 +8,6 @@ import { QUERY_KEYS } from '@/constants/keys';
 import { ApiService } from '@/services';
 import { Loading } from '@/components/loading';
 
-
-
 export default function BrandView() {
   const navigation = useRouter()
   const query = useSearchParams()
